@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #parent{
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+        }
+
+        #child{
+            background-color: black;
+            color: gold;
+            font-size: 40px;
+            padding: 10px;
+            height: 100px;
+        }
+
+        #clickBtn{
+            background-color: skyblue;
+            padding: 10px 30px 10px 30px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="parent"> 
+        <p id="child"></p>
+
+        <button id="clickBtn" onclick="clickandler()">Click Me</button>
+
+        <input type="text"    />
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

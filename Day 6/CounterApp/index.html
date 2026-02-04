@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px
+        }
+        #parent{
+            border: 2px solid black;
+            height: 300px;
+            width: 400px;
+        }
+
+        input{
+            height: 100px;
+            width: 98%;
+            font-size: 80px;
+            /* padding-left:80px ; */
+        }
+
+        button{
+            /* padding: 20px; */
+            height: 60px;
+            /* text-align */
+            /* margin: 0 auto; */
+            width: 100px;
+        }
+
+        #userBtn{
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        p{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="parent">
+        <input id="displayBox" value="0"/>
+
+        <p id="para">0</p>
+
+        <div id="userBtn">
+            <button  id="decBtn">-</button>
+            <button id="resetBtn">Reset</button>
+            <button id="incBtn">+</button>
+        </div>
+
+    </div>
+
+    
+
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
