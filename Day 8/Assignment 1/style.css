@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#leftBox{
+    width: 30%;
+}
+
+#inputForm{
+    border: 2px solid black;
+    height: 300px;
+  
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    gap: 10px;
+}
+
+#rightBox{
+    border: 2px solid  black;
+    height: 300px;
+    width: 70%;
+
+}
+
+
+#parentBox{
+    display: flex;
+
+    gap: 30px;
+
+    border: 2px solid red;
+
+    padding: 30px;
+}
+
+.eachCard{
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    position: relative;
+}
+
+#card{
+    padding: 20px;
+    height: 100%;
+   overflow: auto;   
+    gap: 20px;
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+.crossBtn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
