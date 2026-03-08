@@ -1,15 +1,13 @@
 function first() {
-
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve,reject)=>{
         setTimeout(() => {
-
             try {
-                console.log('first')
-                resolve('first completed')
+                conssole.log('first')
+                resolve()
+                
             } catch (error) {
-                reject('error in first')
+                reject('error in')
             }
-
         }, 4000);
     })
 }
@@ -32,10 +30,45 @@ function second() {
 
 
 function third() {
-    setTimeout(() => {
-        console.log('third')
+  return new Promise((resolve,reject)=>{
+
+     setTimeout(() => {
+       try{
+         console.log('third')
+         resolve()
+       }catch(error){
+        reject()
+       }
     }, 1000);
+
+   })
 }
+
+
+console.log(first())
+// second()
+// third()
+ 
+ 
+
+// first()
+// .then(()=>{
+//     return second()
+// })
+// .then(()=>{
+//     return third()
+// })
+// .catch(()=>{
+//     console.log('error in promise')
+// })
+ 
+
+// first()
+// .then(()=>second())
+// .then(()=>third())
+// .catch(()=>console.log('error in promise'))
+
+
 
 // first().then((data) => {
 //     console.log(data)
@@ -49,12 +82,39 @@ function third() {
 
 
 
-async function runMyCode(){
-    await first()
+// async function runMyCode(){
+//  await first()
 
-    await second()
+//  await second()
 
-    third()
-}
+//  await third()
+// }
 
-runMyCode()
+
+// runMyCode()
+
+
+
+
+// function first(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//         console.log('first')
+//         resolve()
+//     }, 3000);
+//     })
+// }
+ 
+// function second(){
+//     setTimeout(() => {
+//         console.log('second')
+//     }, 1000);
+// }
+
+
+// async function runMyCode(){
+//     await first()
+//         await  second()
+// }
+
+// runMyCode()
