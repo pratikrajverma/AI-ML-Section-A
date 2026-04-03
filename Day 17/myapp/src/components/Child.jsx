@@ -3,12 +3,14 @@ import { useState } from "react"
 function Child() {
     //   let count = 10;
 
+
+
     const [count, setCount] = useState(0)
 
 
     // function clickHandler(){
     //     // console.log('first')
-    //     //  count = count + 1
+    //   count = count + 1
     //     // console.log(count)
 
     //      setCount(count+1)
