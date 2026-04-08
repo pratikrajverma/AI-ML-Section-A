@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import students from '../data'
+import '../App.css'
 
 const Reportcard = () => {
 
   const[studentData, setStudentData] = useState(students)
-
   console.log(students)
   // let name = 'pratik'
   // let marks = 90
+
+  console.log(studentData.length)
 
   let studentObj = {
     name:'',
@@ -28,15 +30,31 @@ const Reportcard = () => {
     // console.log(students)
     
     setStudentData((preData)=>{
-      return [...preData, studentObj]
+        return [...preData, studentObj]
     })
      
   }
 
 
+  let isLogin = false
+
+  let TotalStudents = studentData.length
+
+  let PassedStudent = studentData.filter((item)=>{
+    return item.marks >= 40
+  }).length
+
+
   return (
     <div>
       <h1>Report Card</h1>
+
+      <p>Total Students : {TotalStudents}</p>
+
+      <p>Passed students :  {PassedStudent}</p>
+      <p>Failed students :  {TotalStudents - PassedStudent}</p>
+      <p>Avg. Marks : </p>
+
 
       {/* <p>Name :   {data[0].name}  </p>
       <p>Marks :  {data[0].marks}</p>
@@ -56,19 +74,36 @@ const Reportcard = () => {
           <button type='submit'>Add</button>
       </form>
 
-      {
-        studentData.map((item,index) => {
+     <div  id='reportCard'>
+       {
+        studentData.map((item,index)=>{
           return <div key={index}>
             <p>Name : {item.name}</p>
             <p>Marks : {item.marks}</p>
-            <hr/>
-
           </div>
         })
 
       }
+     </div>
 
 
+
+
+{/* 
+      {
+        
+          isLogin ?   <button>Login</button> : <button>Logout</button>
+      } */}
+
+      {/* {
+        isLogin && <button>Login</button>
+      }
+
+     
+     {
+        !isLogin && <button>Logout</button>
+     } */}
+      
 
 
     </div>
