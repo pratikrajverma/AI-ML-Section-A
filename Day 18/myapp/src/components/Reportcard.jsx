@@ -23,7 +23,7 @@ const Reportcard = () => {
     studentObj.marks = event.target.marks.value
 
     console.log(studentObj)
-
+ 
 
     // students.push(studentObj)
     
