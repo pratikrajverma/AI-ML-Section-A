@@ -11,7 +11,7 @@ const App = () => {
 
 
   function aboutHandler(){
-      navigate('/about')
+    navigate('/about')
   }
  
 
@@ -40,9 +40,9 @@ const App = () => {
 
 
 
-        <button onClick={aboutHandler}>About</button>
-        <button onClick={contactHandler}>contact</button>
-        <button>Dashboard</button>
+        <button   onClick={aboutHandler}>About</button>
+        <button   onClick={contactHandler}>contact</button>
+        <button>  Dashboard   </button>
 
    
 
