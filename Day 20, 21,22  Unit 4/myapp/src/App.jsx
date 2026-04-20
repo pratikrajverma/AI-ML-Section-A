@@ -5,6 +5,7 @@ import Contact from './pages/Contact'
 import Dashboard from './pages/Dashboard'
 import { Form, Link, NavLink, Route, Routes, useNavigate } from 'react-router-dom'
 import FormBox from './components/FormBox'
+import ProductList from './components/ProductList'
 
 const App = () => {
 
@@ -63,7 +64,9 @@ const App = () => {
 
 
 
-          <FormBox/>
+          {/* <FormBox/> */}
+
+          <ProductList/>
 
 
 
