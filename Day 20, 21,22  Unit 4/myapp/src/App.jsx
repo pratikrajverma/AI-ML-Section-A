@@ -3,21 +3,22 @@ import Child from './components/Child'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Dashboard from './pages/Dashboard'
-import { Link, NavLink, Route, Routes, useNavigate } from 'react-router-dom'
+import { Form, Link, NavLink, Route, Routes, useNavigate } from 'react-router-dom'
+import FormBox from './components/FormBox'
 
 const App = () => {
 
-   const navigate = useNavigate()
+  //  const navigate = useNavigate()
 
 
-  function aboutHandler(){
-    navigate('/about')
-  }
+  // function aboutHandler(){
+  //   navigate('/about')
+  // }
  
 
-  function contactHandler(){
-    navigate('/contact')
-  }
+  // function contactHandler(){
+  //   navigate('/contact')
+  // }
 
   return (
     <div>
@@ -34,7 +35,7 @@ const App = () => {
         <Link to='/'>Home</Link><br/><br/> */}
 
 
-        <NavLink to='/about'> About </NavLink><br/><br/>
+        {/* <NavLink to='/about'> About </NavLink><br/><br/>
         <NavLink to='/contact'> Contact </NavLink><br/><br/>
         <NavLink to='/dashboard'> Dashboard </NavLink><br/><br/>
 
@@ -57,7 +58,13 @@ const App = () => {
 
         </Routes>
 
- 
+  */}
+
+
+
+
+          <FormBox/>
+
 
 
     </div>
