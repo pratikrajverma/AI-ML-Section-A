@@ -1,72 +1,79 @@
-import React from 'react'
-import Child from './components/Child'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Dashboard from './pages/Dashboard'
-import { Form, Link, NavLink, Route, Routes, useNavigate } from 'react-router-dom'
-import FormBox from './components/FormBox'
-import ProductList from './components/ProductList'
+import React, { useContext, useState } from 'react'
+import Child from './components/useEffect/Child'
+import About from './components/React Router/pages/About'
+import Contact from './components/React Router/pages/Contact'
+import Dashboard from './components/React Router/pages/Dashboard'
+import { Form, Link, NavLink, Route, Routes, useNavigate, useSearchParams } from 'react-router-dom'
+import FormBox from './components/React Form/FormBox'
+ 
+import Card1 from './components/Context api Cards/cards/Card1'
+import Card2 from './components/Context api Cards/cards/Card2'
+import Card3 from './components/Context api Cards/cards/Card3'
+import { ThemeContext } from './components/Context api Cards/context/ThemeContextProvider'
+import Card from './components/API Call/Card'
+import ProductList from './components/API Call/ProductList'
+import ParentCard from './components/Context api Cards/cards/ParentCard'
+import Home from './components/React Router/pages/Home'
 
 const App = () => {
 
-  //  const navigate = useNavigate()
+  
 
 
-  // function aboutHandler(){
-  //   navigate('/about')
-  // }
- 
 
-  // function contactHandler(){
-  //   navigate('/contact')
-  // }
+
+
 
   return (
-    <div>
+    <div  >
       {/* <Child/> */}
- 
-      {/* <p>About</p>
-      <p>Contact</p>
-      <p>Dashboard</p>   */}
 
-{/*  
-        <Link to='/about'>About</Link><br/><br/>
-        <Link to='/contact'>Contact</Link><br/><br/>
-        <Link to='/dashboard'>Dashboard</Link><br/><br/>
-        <Link to='/'>Home</Link><br/><br/> */}
-
-
-        {/* <NavLink to='/about'> About </NavLink><br/><br/>
-        <NavLink to='/contact'> Contact </NavLink><br/><br/>
-        <NavLink to='/dashboard'> Dashboard </NavLink><br/><br/>
-
-
-
-        <button   onClick={aboutHandler}>About</button>
-        <button   onClick={contactHandler}>contact</button>
-        <button>  Dashboard   </button>
-
-   
-
-        <Routes>
-
-          <Route path='/about'  element={<About/>}/>
-
-          <Route path='/contact' element={<Contact/>}/>
-
-
-          <Route path='/dashboard' element={<Dashboard/>}/>
-
-        </Routes>
-
-  */}
+    
 
 
 
 
-          {/* <FormBox/> */}
 
-          <ProductList/>
+     {/* api calling examples.............. */}
+      {/* <ProductList/> */}
+
+
+
+    {/* context api examples..... */}
+
+      {/* <ParentCard/> */}
+      
+
+    {/* React Form................. */}
+      {/* <FormBox/> */}
+
+
+
+      {/* React Router.............. */}
+
+        {/* <Home/> */}
+
+
+
+      {/* Use effect hook using....... */}
+
+        {/* <Child/> */}
+
+
+
+
+
+
+    {/* examples for types of components rendering...... */}
+
+      {/* <Card3 dark={dark} />
+
+
+
+            <Card3>
+              {dark}
+            </Card3> */}
+
 
 
 

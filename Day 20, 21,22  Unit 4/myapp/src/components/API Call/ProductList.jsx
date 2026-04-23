@@ -7,8 +7,8 @@ const ProductList = () => {
 
     const [productData, setProductData] = useState([])
 
-    async function getData(){
-        try{
+    async function getData() {
+        try {
 
             let response = await fetch(api)
             let data = await response.json()
@@ -16,35 +16,26 @@ const ProductList = () => {
             setProductData(data.products)
             // console.log(data.products)
 
-        }catch(err){
+        } catch (err) {
             console.log(err)
         }
     }
-
-    
-   useEffect(()=>{
-     getData()
-
-     
-   },[])
-
-
+    useEffect(() => {
+        getData()
+    }, [])
     console.log(productData)
 
-  return (
-    <div>
-        <h1>API Calling...</h1>
+    return (
+        <div>
+            <h1>API Calling...</h1>
 
-        {
-            productData.map((item)=>{
-                return <Card item={item}/>
-            })
-        }
-        
-
-
-    </div>
-  )
+            {
+                productData.map((item) => {
+                    return <Card item={item} />
+                })
+            }
+        </div>
+    )
 }
 
 export default ProductList

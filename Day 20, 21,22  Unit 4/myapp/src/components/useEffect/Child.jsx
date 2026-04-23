@@ -20,8 +20,7 @@ const Child = () => {
             clearInterval(interval)
         })
 
-    
-    // fetch('').then(()=> )
+     
     },[])
 
 
