@@ -14,6 +14,8 @@ import Card from './components/API Call/Card'
 import ProductList from './components/API Call/ProductList'
 import ParentCard from './components/Context api Cards/cards/ParentCard'
 import Home from './components/React Router/pages/Home'
+import Debouncing from './components/Debouncing/Debouncing'
+import Pagination from './components/Pagination/Pagination'
 
 const App = () => {
 
@@ -65,6 +67,17 @@ const App = () => {
             <Card3>
               {dark}
             </Card3> */}
+
+
+
+        {/* API Optimization...... */}
+        
+
+        {/* <Debouncing/> */}
+
+        <Pagination/>
+
+      
 
     </div>
   )

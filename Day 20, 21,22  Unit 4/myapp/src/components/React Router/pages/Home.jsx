@@ -41,8 +41,10 @@ const Home = () => {
         <button   onClick={aboutHandler}>About</button>
         <button   onClick={contactHandler}>contact</button>
         <button>  Dashboard   </button>
-
-   
+{/* 
+    <About/>
+    <Contact/>
+    <Dashboard/> */}
 
         <Routes>
 
